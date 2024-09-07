@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* HeaderCp */
+header {
+  height: 60px;
+  background-color: #ccc;
+  padding: 0 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header .wrap {
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+header .wrap .logo {
+}
+header .wrap .logo a {
+  text-transform: uppercase;
+  color: #333;
+}
+header .wrap .logo a img {
+  height: 40px;
+}
+header .wrap nav {
+  display: flex;
+  column-gap: 20px;
+}
+header .wrap nav ul {
+  display: flex;
+  column-gap: 10px;
+}
+header .wrap nav ul li {
+}
+header .wrap nav ul li a {
+  color: #555;
+}
+header .wrap nav ul li:hover a {
+  color: #111;
+}
+header .wrap nav div {
+  display: flex;
+  column-gap: 10px;
+}
+header .wrap nav div button {
+  border: none;
+  border-radius: 6px;
+  background-color: #9af;
+  cursor: pointer;
+}
+header .wrap nav div button:hover {
+  background-color: #78d;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.mainbanner {
+  width: 100%;
+  height: 400px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainbanner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
